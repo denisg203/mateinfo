@@ -1,3 +1,9 @@
+/* 
+Se citeste un vector cu n*n componente. Sa se construiasca matricea patratica astfel:
+    0 2 5
+    1 4 7
+    3 6 8
+*/
 #include <iostream>
 
 using namespace std;
