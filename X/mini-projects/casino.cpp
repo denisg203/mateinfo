@@ -1,4 +1,4 @@
-//Casino Number Guessing Game
+// Casino Number Guessing Game
 
 #include <iostream>
 #include <stdlib.h>
