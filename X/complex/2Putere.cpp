@@ -1,5 +1,4 @@
-//Sa se ridice 2 la puterea n. asdkasdjioasdias 
-
+//Sa se ridice 2 la puterea n.
 #include <iostream>
 
 using namespace std;
