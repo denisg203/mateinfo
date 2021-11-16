@@ -1,4 +1,4 @@
-//Sa se ridice 2 la puterea n.
+//Sa se ridice 2 la puterea n. asdkasdjioasdias 
 
 #include <iostream>
 
