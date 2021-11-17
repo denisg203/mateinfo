@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int pInt,pIes,dim.v[30],opt,stare,i;
+int pInt,pIes,dim,v[30],opt,stare,i;
 int main() {
     pInt=-1; pIes=-1;
     cout << "dim="; cin >> dim; v[dim]={0};
