@@ -12,11 +12,11 @@ int main() {
         cout << "Iesire(4)\n";
         cin >> opt;
         switch(opt) {
-            case 1: {
+            case 1: {           // adunarea unui element
                 stare=1;
                 for(i=0;i<dim;i++)
                     if(v[i]==0)
-                        stare=0;
+                        stare=0;        //verificam daca coada are toate pozitiile ocupate, caz in care schimbam starea
                 if(stare)
                     cout << "Nu se poate adauga\nTe rog alege alta optiune\n";
                 else {
@@ -32,11 +32,11 @@ int main() {
                 }
                 break;
             }
-            case 2: {
+            case 2: {           //eliminarea unui element
                 stare=1;
                 for(i=0;i<dim;i++)
                     if(v[i]!=0)
-                        stare=0;
+                        stare=0;        //verificam daca coada este goala, caz in care schimbam starea
                 if(stare)
                     cout << "Coada este vida\nTe rog alege alta optiune\n";
                 else {
@@ -52,7 +52,7 @@ int main() {
                 }
                 break;
             }
-            case 3: {
+            case 3: {           //afisarea elementelor
                 cout << "Vectorul arata asa: ";
                 for(i=0;i<dim;i++)
                     cout << v[i] << " ";
