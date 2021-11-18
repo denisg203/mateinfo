@@ -10,9 +10,8 @@ string words[30],aux;
 char k;
 int main() {
     cout << "Introduce the amount of words you want in the array: "; cin >> n; cout << "Please introduce the words: ";
-    for(i=0;i<n;i++) {
+    for(i=0;i<n;i++)
         cin >> words[i];
-    }
     for(i=0;i<n;i++) {
         str=words->length();
         aux=words[i];
