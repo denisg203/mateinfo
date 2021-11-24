@@ -40,7 +40,8 @@ int main () {
                     pozj++;
                     if (A[pozi][pozj] == 0) {
                         z++;
-                            A[pozi][pozj] = z; }
+                        A[pozi][pozj] = z; 
+                    }
                 }
                 break;
 
@@ -122,7 +123,7 @@ int main () {
 
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            cout << setw(3) << A[i][j];
+            cout << setw(4) << A[i][j];
         }
         cout << endl;
     }
