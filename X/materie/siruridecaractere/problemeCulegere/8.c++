@@ -18,7 +18,7 @@ int main() {
             maxx=x;
             poz=i;
         }
-    }while(vectorPro[i][0]!=' ');
+    }while(strlen(propozitie)!=0);
     cout << vectorPro[poz];
     return 0;
 }
