@@ -1,3 +1,4 @@
+//se citeste un sir format din paranteze. sa se determine daca se inchid corect
 #include <iostream>
 #include <string.h>
 

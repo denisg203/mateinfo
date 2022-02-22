@@ -4,9 +4,14 @@
 
 using namespace std;
 
-char nume[20], prenume[20];
+char nume[30];
 
 int main() {
-    cin.getline(nume, 20); cin.getline(prenume, 20);
-    cout << nume[0] << nume[1] << prenume[0] << prenume[1];
+    cin.getline(nume, 20);
+    char *buc=strtok(nume, " ");
+    while(buc!=NULL) {
+        cout << buc[0] << buc[1];
+        buc=strtok(NULL, " ");
+    }
+    return 0;
 }
