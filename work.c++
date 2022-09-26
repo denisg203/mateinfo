@@ -6,6 +6,6 @@ using namespace std;
 
 
 int main() {
-    // hai sa nu ne chinuim
+    // hai sa nu ne chinui
     return 0;
 }
