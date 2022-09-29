@@ -34,14 +34,17 @@ void insert(int x, int k) {
     v[poz]=x;
 }
 
+//DE GANDIT ALTA DATA
+
 int main() {
     cin >> m >> n;
     for(i=0;i<m;i++) 
         cin >> a[i];
     for(i=0;i<n;i++) 
         cin >> b[i];
-    sort(m, a); sort(n, b);
+    sort(m, a);
     for(i=0;i<m;i++) {
+        insert(b[i], i);
     }
     return 0;
 }
