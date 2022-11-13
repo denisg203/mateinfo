@@ -1,11 +1,16 @@
 #include <iostream>
-#include <string.h>
 
 using namespace std;
 
+int ok;
 
+int f(int x) {
+    
+}
 
 int main() {
-    // hai sa nu ne chinuim
+    int x,kp=0,ki=0;
+    cin >> x;
+    f(x,kp,ki); cout << kp << " " << ki;
     return 0;
 }
