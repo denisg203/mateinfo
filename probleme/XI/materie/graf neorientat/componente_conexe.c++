@@ -5,7 +5,7 @@ using namespace std;
 
 ifstream f("a.txt");
 
-int n,v[10],x[10],a[10][10],i,k,st,dr,start,c,p=1;
+int n,v[20],x[20],a[20][20],i,k,st,dr,start,c,p=1;
 
 int main() {
     f >> n >> start;
@@ -14,7 +14,7 @@ int main() {
             f >> a[i][j];
     st=1; dr=1; c=1; x[1]=start; v[start]=1;
     while(p!=n) {
-        while(st<=dr && st <=8 && dr<=8) { //2 conditii in plus ca sa evit segfault
+        while(st<=dr && st <=n && dr<=n) { //2 conditii in plus ca sa evit segfault
             k=x[st];
             for(i=1;i<=n;i++) {
                 if(a[k][i]==1 && v[i]==0) {
