@@ -2,15 +2,48 @@
 
 using namespace std;
 
-int ok;
+int as,st[100],ev,n,k;
 
-int f(int x) {
-    
+void init() {
+    st[k]=0;
+}
+
+void succesor() {
+    if(st[k]<n) {
+        as=1;
+        st[k]++;
+    }
+    else as=0;
+}
+
+void valid() {
+    ev=1;
+    for(int i=1;i<k;i++) if(st[k]==st[i]) ev=0;
+}
+
+int solutie() {
+    return (k==n);
+}
+
+void tipar() {
+    for(int i=1;i<=k;i++) cout << st[i] << " ";
+    cout << endl;
 }
 
 int main() {
-    int x,kp=0,ki=0;
-    cin >> x;
-    f(x,kp,ki); cout << kp << " " << ki;
-    return 0;
+    cin >> n;
+    k=1; init();
+    while(k!=0) {
+        do {
+            succesor();
+            if(as) valid();
+        } while(!((!as) || (as==ev)));
+        if(as) {
+            if(solutie()) tipar();
+            else {
+                k++; init();
+            }
+        }
+        else k--;
+    }
 }
