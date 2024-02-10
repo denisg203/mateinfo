@@ -1,24 +1,30 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
-int n,k,k1,p,l;
+int x,v[100],i,k,aux,j;
+
+ifstream f;
 
 int main() {
-    cin >> n >> k;
-    //n linii n*k coloane
-    l=k;
-    for(int i=1;i<=n;i++) {
-        k1=i; p=0;
-        for(int j=1;j<=n*k;j++) {
-            if(p<l) {
-                cout << k1 << " ";
-                p++;
-            }
-            else {
-                k1++; p=1; cout << k1 << " ";
+    f.open("bac.in");
+    while(!f.eof()) {
+        f >> x;
+        if(x%10==0 && x/10%10==2) {
+            v[k]=x;
+            k++;
+        }
+    }
+    for(i=0;i<k-1;i++) {
+        for(j=i;j<k;j++) {
+            if(v[i]<v[j]) {
+                aux=v[i];
+                v[i]=v[j];
+                v[j]=aux;
             }
         }
-        cout << endl;
     }
+    for(i=0;i<3;i++) cout << v[i] << " ";
+    f.close();
 }
