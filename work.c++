@@ -1,30 +1,24 @@
 #include <iostream>
-#include <fstream>
 
 using namespace std;
 
-int x,v[100],i,k,aux,j;
+struct cerc {
+    int raza;
+    struct coord{
+        int x,y;
+    }centru;
+}fig;
 
-ifstream f;
+int c1,c2,n,s;
 
 int main() {
-    f.open("bac.in");
-    while(!f.eof()) {
-        f >> x;
-        if(x%10==0 && x/10%10==2) {
-            v[k]=x;
-            k++;
-        }
+    cin >> n;
+    c1=n%10; n/=10; c2=n%10;
+    if(c1==c2) s=0;
+    else if(c1>c2) s=1;
+    else s=-1;
+    while((c1-c2)*s>0) {
+        c1=n%10; n/=10; c2=n%10;
     }
-    for(i=0;i<k-1;i++) {
-        for(j=i;j<k;j++) {
-            if(v[i]<v[j]) {
-                aux=v[i];
-                v[i]=v[j];
-                v[j]=aux;
-            }
-        }
-    }
-    for(i=0;i<3;i++) cout << v[i] << " ";
-    f.close();
+    cout << s << " " << n;
 }
