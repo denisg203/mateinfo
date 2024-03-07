@@ -1,2 +1,2 @@
-Diferite proiecte facute pe parcursul liceului, elev clasa mate-info Mircea Eliade, Sighisoara.
-signed by Denis
+Proiecte si probleme facute pe parcursul anilor de liceu, elev la mate-info.
+signed by denis.
