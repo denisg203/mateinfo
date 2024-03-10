@@ -48,5 +48,6 @@ int main() {
         }
         else k--;
     }
+    tipar();
     return 0;
 }
